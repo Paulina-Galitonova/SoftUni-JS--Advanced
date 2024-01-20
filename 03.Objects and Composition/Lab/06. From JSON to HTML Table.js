@@ -7,7 +7,7 @@ function fromJSONToHTMLTable(input){
     output +=" <tr>";
 
     for (const key in firstObj){
-        output  += `<th>${key}</th>`
+        output  += `<th>${escapeHtml(key)}</th>`
     }
 
     output +=   '</tr>\n'
@@ -17,7 +17,7 @@ function fromJSONToHTMLTable(input){
         output += ' <tr>';
 
         for (const key in obj){
-            output += `<td>${obj[key]}</td>`;
+            output += `<td>${escapeHtml(obj[key].toString())}</td>`;
 
         }
         output +="</tr>\n"
@@ -26,9 +26,17 @@ function fromJSONToHTMLTable(input){
 
     output +="</table>";
 
-    function escapeHTML(text) {
-        return encodeURIComponent(text).replace(/%20/g, '+').replace(/%3D/g, '=').replace(/%3A/g, ':').replace(/%2F/g, '/');
-      }
+    function escapeHtml(value) {
+        let entityMap = {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            ' ': '&nbsp;',
+        };
+        return value.toString().replace(/[&<> "]/g, (char) => entityMap[char]);
+    }
+    
 
     return output
     
