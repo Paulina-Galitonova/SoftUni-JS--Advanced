@@ -1,5 +1,7 @@
 function colorize() {
-    let elements = document.getElementsByTagName('tr');
+
+    
+    let rows = document.getElementsByTagName('tr');
     let arr=Array.from(elements);
 
     for(let i=1; i< arr.length; i+=2){
