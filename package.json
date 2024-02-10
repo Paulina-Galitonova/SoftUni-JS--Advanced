@@ -1,0 +1,19 @@
+{
+  "name": "softuni-js--advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^5.0.3",
+    "mocha": "^10.2.0"
+  }
+}
