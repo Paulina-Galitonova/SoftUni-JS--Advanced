@@ -1,8 +1,8 @@
+
+
 import { assert } from "chai";
 
 import { isSymmetric } from "../07.Exercise Unit Testing and Error Handling/05. checkSymmetry.js";
-
-
 describe('Symmetry Checker', ()=>{
     it('return true if is symmetric', ()=>{
         assert.isTrue(isSymmetric([1,0,0,1]));

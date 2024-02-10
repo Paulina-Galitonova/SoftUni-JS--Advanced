@@ -1,6 +1,6 @@
 import { assert } from "chai";
 
-import {createCalculator} from "../07.Exercise Unit Testing and Error Handling/07. addSubtract.js"
+import {createCalculator} from "../07.Exercise Unit Testing and Error Handling/LAB/07. addSubtract.js"
 
 describe("createCalculator function", () => {
     it("should return an object with add, subtract, and get functions", () => {
