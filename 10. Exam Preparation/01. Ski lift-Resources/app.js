@@ -42,7 +42,7 @@ function solve() {
         elementLi.className = "ticket";
 
         let elementArt = document.createElement("article");
-        elementArt.innerHTML = `<h3>Name: ${firstName} ${lastName}</h3> <p>From date: ${date}</p> <p>For: ${days} days</p><p>For: ${people} people</p>`;
+        elementArt.innerHTML = `<h3>Name: ${firstName} ${lastName}</h3> <p>From date: ${date}</p> <p>For ${days} days</p><p>For ${people} people</p>`;
 
         // Append the elementArt to elementLi
         elementLi.appendChild(elementArt);
@@ -83,7 +83,7 @@ function solve() {
         elementLi.className = "ticket-content";
     
         let elementArt = document.createElement("article");
-        elementArt.innerHTML = `<h3>Name: ${firstName} ${lastName}</h3> <p>From date: ${date}</p> <p>For: ${days} days</p><p>For: ${people} people</p>`;
+        elementArt.innerHTML = `<h3>Name: ${firstName} ${lastName}</h3> <p>From date: ${date}</p> <p>For ${days} days</p><p>For ${people} people</p>`;
     
         // Append the elementArt to elementLi
         elementLi.appendChild(elementArt);
