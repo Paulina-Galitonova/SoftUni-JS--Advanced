@@ -118,7 +118,7 @@ function solve() {
             let body=document.getElementById("body")
             let textEl=document.createElement("h1");
             textEl.id="thank-you";
-            textEl.textContent="Thank you, have a nice day!";
+            textEl.textContent="Thank you, hav  e a nice day!";
             let backBtn=document.createElement("button");
             backBtn.id="back-btn";
             backBtn.textContent="Back"
